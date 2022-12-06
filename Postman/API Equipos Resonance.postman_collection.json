@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "9278d254-211a-4cf3-b490-83abe40ba129",
+		"name": "API Equipos Resonance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21287699"
+	},
+	"item": [
+		{
+			"name": "Equipos",
+			"item": [
+				{
+					"name": "/equipos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/equipos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"equipos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/equipos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"serialNumber\": \"9876543210\",\n  \"partNumber\": \"TWF1234CD\",\n  \"modelo\": \"Move 2500 FULL\",\n  \"estado\": \"Libre\",\n  \"propietario\": \"OCA\",\n  \"ubicacion\": \"Stock Carrasco\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/equipos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"equipos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": []
+		},
+		{
+			"name": "Auth",
+			"item": []
+		}
+	]
+}
